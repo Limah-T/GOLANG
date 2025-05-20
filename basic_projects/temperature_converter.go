@@ -12,9 +12,9 @@ func temperatureConverter(converter string, temperature int){
 		fmt.Printf("Temperature is %v°C", result)
 	} else {
 		fmt.Print("Invalid converter input")
-	}
+	} 
 }
-func main() {
+func converter() {
 	var converter string
 	var temperature int
 	fmt.Print("Enter the Converter 'F' for Fahrenheit, 'C' for Celsuis: ")
@@ -22,4 +22,5 @@ func main() {
 	fmt.Print("What is the temperature? ")
 	fmt.Scan(&temperature)
 	temperatureConverter(converter, temperature)
+
 }
